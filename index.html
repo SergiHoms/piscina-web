@@ -9,19 +9,26 @@
 		<meta name="description" content="descripción de la web, se recomienda 90 caracteres">
         <meta name="keywords" 	 content="palabras clave, separadas, por comas">
 
-        <link href="style/main.css" rel="stylesheet">
+        <link href="style/main-mobile.css" rel="stylesheet">
 </head>
 <body>
     <header>
         <div class="header">
-            <div class="desktop-two-columns">
+            <div class="desktop-three-columns mobile-two-columns">
                 <div class="column">
                     <div class="header-title">
                         <h1>PISCINAS LLOSETA</h1>
                     </div>
                 </div>
-
                 <div class="column">
+                    <div class="header-main-menu-button mobile-only">
+                        <svg viewBox="0 0 24 24">
+                            <path fill="currentColor" d="M3,6H21V8H3V6M3,11H21V13H3V11M3,16H21V18H3V16Z"/>
+                        </svg>   
+                    </div>
+                </div>
+
+                <div class="column desktop-only">
                     <div class="header-navigation">
                         <ul>
                             <li>INICIO</li>
@@ -58,7 +65,7 @@
                             <h2>EXTERIOR</h2>
                         </div>
                         <div class="featured-element-description">                        
-                            <p>La evolución en el diseño de las piscinas nos ha dado como resultado verdaderas obras de arte en las que se conjugan seguridad y funcionalidad a partes iguales.</p>
+                            <p>Las nuevas técnicas de construcción y los nuevos materiales disponibles para ello han logrado que los límites en el diseño de piscinas tan sólo sean aquellos que residen en nuestra propia imaginación.</p>
                         </div>
                         <div class="featured-element-image">     
                             <img src="images/exterior.jpg" alt="piscina exterior"> 
@@ -120,21 +127,23 @@
                         <h2>PISCINAS LLOSETA</h2>
                     </div>
                 </div>
+
+                <div class="column">
+                    <div class="footer-names">
+                        <ul class="footer-list">
+                            <li>Quienes somos</li>
+                            <li>Publicidad</li>
+                            <li>Contacto</li>
+                            <li>Aviso Legal</li>
+                            <li>Política de cookies</li>
+                            <li>Consentimiento</li>
+                            <li>Status</li>
+                        </ul>
+                    </div>     
+                </div>
             </div>
         </div>
-            <div class="column">
-                <div class="footer-names">
-                    <ul class="footer-list">
-                        <li>Quienes somos</li>
-                        <li>Publicidad</li>
-                        <li>Contacto</li>
-                        <li>Aviso Legal</li>
-                        <li>Política de cookies</li>
-                        <li>Consentimiento</li>
-                        <li>Status</li>
-                    </ul>
-                </div>     
-            </div>
+            
     </footer>
 </body>
 

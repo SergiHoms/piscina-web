@@ -722,4 +722,286 @@ header {
   padding: 0.5rem 2rem;
 }
 
+.products {
+  margin: 2rem 0;
+}
+.products .products-category .products-category-title {
+  background-color: hsl(207deg, 100%, 27%);
+  border-radius: 0.6rem;
+  padding: 1rem 0;
+  margin-bottom: 1rem;
+}
+.products .products-category .products-category-title h2 {
+  text-align: center;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.products .products-category .products-category-menu {
+  background-color: hsl(207deg, 100%, 27%);
+  border-radius: 0.6rem;
+  padding: 1rem 0;
+}
+.products .products-category .products-category-menu ul li {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: white;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.products-menu {
+  margin-bottom: 1rem;
+}
+.products-menu .products-searcher {
+  margin-left: auto;
+  width: max-content;
+}
+.products-menu .products-searcher form input {
+  border-radius: 0.6rem;
+}
+
+.products-gallery .product {
+  margin-bottom: 1rem;
+}
+.products-gallery .product .product-image img {
+  border: solid 4px white;
+}
+.products-gallery .product .product-title {
+  background-color: hsl(207deg, 100%, 27%);
+  border-radius: 0.6rem;
+  margin: 1rem 0;
+}
+.products-gallery .product .product-title h3 {
+  text-align: center;
+  padding: 0.5rem;
+}
+.products-gallery .product .product-offer {
+  padding: 1rem;
+  margin-bottom: 2rem;
+}
+.products-gallery .product .product-offer button {
+  border-radius: 0.6rem;
+  padding: 0.5rem;
+  margin-left: 2rem;
+}
+.products-gallery .product .product-offer button p {
+  color: hsl(207deg, 100%, 27%);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: 600;
+  text-align: center;
+}
+
+.product {
+  margin: 2rem 0;
+  margin-bottom: 6.9rem;
+}
+.product .product-gallery .product-main-image {
+  width: 32rem;
+}
+.product .product-gallery .product-main-image img {
+  border: solid white;
+}
+.product .product-info-article {
+  padding-left: 6rem;
+}
+.product .product-info-article .product-title {
+  background-color: hsl(207deg, 100%, 27%);
+  border-radius: 0.6rem;
+  margin-bottom: 1rem;
+}
+.product .product-info-article .product-title h2 {
+  text-align: center;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.product .product-info-article .product-form {
+  margin-bottom: 2rem;
+}
+.product .product-info-article .product-form form label {
+  color: white;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.product .product-info-article .product-form form input {
+  border-radius: 0.6rem;
+}
+.product .product-info-article .product-button button {
+  background-color: hsl(207deg, 100%, 27%);
+  color: white;
+  border-radius: 0.6rem;
+}
+.product .product-info-article .product-price h3 {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.product .product-info-article .product-price .product-article-title h3 {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.product .product-info-article .product-article {
+  background-color: hsl(207deg, 100%, 27%);
+  border-radius: 0.6rem;
+  margin-bottom: 2rem;
+}
+.product .product-info-article .product-article p {
+  padding: 1rem;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.cart .title-cart {
+  margin-top: 1rem;
+}
+.cart .title-cart h2 {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+  font-weight: 600;
+}
+.cart .cart-menu ul {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+}
+.cart .cart-menu li {
+  color: white;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: 600;
+}
+.cart .items-menu {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+}
+.cart .items-menu span {
+  color: white;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: 600;
+}
+.cart .items-menu .item-image {
+  margin-bottom: 2rem;
+}
+.cart .items-menu .item-image img {
+  width: 5rem;
+}
+.cart .items-menu .item-quantity {
+  display: flex;
+  justify-content: space-between;
+}
+.cart .desktop-one-column {
+  width: 13rem;
+  border-radius: 0.6rem;
+  margin-bottom: 1rem;
+}
+.cart .desktop-one-column .desktop-two-columns {
+  border-radius: 0.6rem;
+  display: flex;
+  justify-content: space-evenly;
+  width: 13rem;
+  background-color: white;
+  border: solid 1px white;
+}
+.cart .desktop-one-column .desktop-two-columns ul {
+  display: flex;
+  justify-content: space-evenly;
+}
+.cart .desktop-one-column .desktop-two-columns ul li {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: hsl(207deg, 100%, 27%);
+}
+.cart .desktop-one-column .top-box {
+  background-color: white;
+  border-radius: 0.6rem;
+}
+.cart .desktop-one-column .top-box h3 {
+  color: hsl(207deg, 100%, 27%);
+  border: solid 1px white;
+  border-radius: 0.6rem;
+}
+.cart .desktop-one-column .desktop-two-columns-box {
+  border-radius: 0.6rem;
+  display: flex;
+  justify-content: space-evenly;
+  width: 13rem;
+  background-color: hsl(207deg, 100%, 27%);
+  border: solid 2px white;
+}
+.cart .desktop-one-column .desktop-two-columns-box ul li {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: white;
+  font-weight: 600;
+  font-size: 1rem;
+}
+.cart .cart-buttons {
+  margin-bottom: 1rem;
+}
+.cart .cart-buttons button {
+  border-radius: 0.6rem;
+  background-color: hsl(207deg, 100%, 27%);
+  color: white;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  padding: 0.5rem 2rem;
+}
+
+.checkout .title-checkout {
+  padding: 1rem;
+}
+.checkout .title-checkout h2 {
+  text-align: center;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 3rem;
+}
+.checkout .checkout-form form .form-element-label label {
+  color: white;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.checkout .checkout-form form .form-element-label-direction label {
+  color: white;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.checkout .checkout-form form .form-element-input-direction input {
+  padding: 0.1rem 0%;
+  width: 88%;
+}
+.checkout .checkout-end .column-box {
+  width: 25rem;
+  margin-bottom: 2rem;
+}
+.checkout .checkout-end .column-box .top-box {
+  background-color: white;
+  border-radius: 0.6rem;
+}
+.checkout .checkout-end .column-box .top-box h3 {
+  text-align: center;
+  color: hsl(207deg, 100%, 27%);
+}
+.checkout .checkout-end .desktop-two-columns-box {
+  border: solid 2px white;
+  border-radius: 0.6rem;
+  display: flex;
+  justify-content: space-evenly;
+  width: 25rem;
+  background-color: hsl(207deg, 100%, 27%);
+}
+.checkout .checkout-end .desktop-two-columns-box ul li {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: white;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+.checkout .input-form {
+  margin-bottom: 2rem;
+}
+.checkout .input-form form label {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: white;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+.checkout .input-button {
+  margin-bottom: 1rem;
+}
+.checkout .input-button button {
+  border-radius: 0.6rem;
+  background-color: hsl(207deg, 100%, 27%);
+  color: white;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  padding: 0.5rem 2rem;
+}
+
+
 /*# sourceMappingURL=main.css.map */
