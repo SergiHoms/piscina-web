@@ -437,38 +437,81 @@ header {
   top: 0;
   z-index: 2;
 }
-
-.header {
-  padding: 1% 5%;
-  width: 90%;
+header .header-navigation-mobile {
+  background-color: hsl(195deg, 100%, 38%);
+  height: 55vh;
+  left: 0;
+  position: fixed;
+  top: -100vh;
+  transition: top 0.5s;
+  width: 100%;
+  color: white;
+  border-radius: 0.6rem;
+}
+header .header-navigation-mobile ul {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 13rem;
+}
+header .header-navigation-mobile ul li {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 1.5rem;
+}
+header .header-navigation-mobile.active {
+  top: 0;
+  transition: top 0.5s;
+}
+header .header {
+  padding: 1rem 0;
+  width: 100%;
   background-color: hsl(0deg, 0%, 100%);
   border-bottom: solid 5px hsl(195deg, 100%, 38%);
-  text-align: left;
+  display: flex;
 }
-
-.header h1 {
+header .header .header-title h1 {
   color: hsl(207deg, 100%, 27%);
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  font-size: 20px;
+  font-size: 2.3rem;
+  margin-left: 2rem;
 }
-
-.header .header-navigation {
-  margin-left: auto;
-  width: 60%;
+header .hamburger-menu-button {
+  position: absolute;
+  right: 5%;
 }
-
-.header .header-navigation ul {
-  display: flex;
-  justify-content: space-between;
-  padding-top: 3%;
-  color: hsl(207deg, 100%, 27%);
+header .hamburger-menu-button svg {
+  width: 3rem;
 }
-
-.header .header-navigation ul li:not(:last-child)::after {
-  content: "|";
-  padding-left: 1rem;
-  color: hsl(0deg, 0%, 67%);
-  font-weight: 600;
+header .hamburger-menu-button-svg {
+  pointer-events: all;
+  cursor: pointer;
+}
+header .hamburger-menu-button-svg .bar {
+  -webkit-transform: rotate(0) translateY(0) translateX(0);
+  transform: rotate(0) translateY(0) translateX(0);
+  opacity: 1;
+  -webkit-transform-origin: 20px 10px;
+  transform-origin: 20px 10px;
+  -webkit-transition: -webkit-transform 0.4s ease-in-out, opacity 0.2s ease-in-out;
+  transition: transform 0.4s ease-in-out, opacity 0.2s ease-in-out;
+}
+header .hamburger-menu-button-svg .bar:nth-of-type(1) {
+  -webkit-transform-origin: 20px 10px;
+  transform-origin: 20px 10px;
+}
+header .hamburger-menu-button-svg .bar:nth-of-type(3) {
+  -webkit-transform-origin: 20px 20px;
+  transform-origin: 20px 20px;
+}
+header .hamburger-menu-button-svg.active .bar:nth-of-type(1) {
+  -webkit-transform: rotate(-45deg) translateY(0) translateX(0);
+  transform: rotate(-45deg) translateY(0) translateX(0);
+}
+header .hamburger-menu-button-svg.active .bar:nth-of-type(2) {
+  opacity: 0;
+}
+header .hamburger-menu-button-svg.active .bar:nth-of-type(3) {
+  -webkit-transform: rotate(45deg) translateY(0em) translateX(0em);
+  transform: rotate(45deg) translateY(0em) translateX(0em);
 }
 
 .footer {
@@ -476,34 +519,35 @@ header {
 }
 
 .footer-title {
-  display: flex;
+  text-align: center;
 }
 
 .footer-title h2 {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-size: 2rem;
   color: hsl(0deg, 0%, 100%);
-  margin-left: 35rem;
   text-align: center;
 }
 
 .footer-names ul {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   color: hsl(0deg, 0%, 100%);
   background-color: hsl(207deg, 100%, 27%);
   margin: auto;
-  text-align: center;
-  padding: 1% 5%;
-  width: 90%;
+  text-align: flex;
+  width: 100%;
+  font-size: 0.6rem;
 }
 
 .footer-names ul li:not(:last-child)::after {
   content: "|";
-  padding-left: 4rem;
   color: hsl(0deg, 0%, 67%);
   background-color: hsl(207deg, 100%, 27%);
   text-align: center;
+  display: flex;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 2px;
 }
 
 .mobile-five-columns {
@@ -532,6 +576,12 @@ header {
 .mobile-three-columns > .column {
   width: 30%;
 }
+.mobile-three-columns > .column .featured-element .featured-element-title {
+  background-color: hsl(207deg, 100%, 27%);
+}
+.mobile-three-columns > .column .featured-element .featured-element-title h2 {
+  color: black;
+}
 
 .mobile-two-columns {
   display: flex;
@@ -549,34 +599,21 @@ header {
 .mobile-one-column > .column {
   width: 100%;
 }
-
-header {
-  position: sticky;
-  top: 0;
-  z-index: 2;
+.mobile-one-column > .column .slider .slider-button button {
+  border-radius: 0.6rem;
+  background-color: hsl(207deg, 100%, 27%);
+  color: white;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  padding: 0.5rem 2rem;
+  margin-left: 10rem;
 }
-header .header {
-  padding: 1% 5%;
-  width: 90%;
-  background-color: hsl(0deg, 0%, 100%);
-  border-bottom: solid 5px hsl(195deg, 100%, 38%);
-  display: flex;
-}
-header .header .header-title h1 {
+.mobile-one-column > .column .slider .slider-title h2 {
   color: hsl(207deg, 100%, 27%);
+  text-align: center;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
-header .header .header-navigation ul {
-  display: flex;
-  justify-content: space-between;
-  padding-top: 3%;
-  color: hsl(207deg, 100%, 27%);
-}
-header .header .header-navigation ul li:not(:last-child)::after {
-  content: "|";
-  padding-left: 1rem;
-  color: hsl(0deg, 0%, 67%);
-  font-weight: 600;
+.mobile-one-column > .column .slider .slider-image {
+  border: solid 2px white;
 }
 
 /*# sourceMappingURL=main-mobile.css.map */

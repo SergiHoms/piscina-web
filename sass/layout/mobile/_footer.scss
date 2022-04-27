@@ -4,33 +4,34 @@
 }
 
 .footer-title{
-    display: flex;
+    text-align: center;
 }
 
 .footer-title h2{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 2rem;
     color:hsl(0, 0%, 100%);
-    margin-left: 35rem;
     text-align: center;
 }
 .footer-names ul{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     color: hsl(0, 0%, 100%);
     background-color:hsl(207, 100%, 27%);
     margin:auto;
-    text-align: center;
-    padding: 1% 5% ;
-    width: 90%;
+    text-align: flex;
+    width: 100%;
+    font-size: .6rem;
 }
 
 .footer-names ul li:not(:last-child)::after{
     content: "|";
-    padding-left: 4rem;
     color: hsl(0, 0%, 67%);
     background-color:hsl(207, 100%, 27%);
     text-align: center;
+    display: flex;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 2px;
 }
 
 
