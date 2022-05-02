@@ -438,7 +438,7 @@ header {
   z-index: 2;
 }
 header .header-navigation-mobile {
-  background-color: hsl(195deg, 100%, 38%);
+  background-color: hsl(207deg, 100%, 27%);
   height: 55vh;
   left: 0;
   position: fixed;
@@ -448,18 +448,20 @@ header .header-navigation-mobile {
   color: white;
   border-radius: 0.6rem;
 }
+header .header-navigation-mobile ul li {
+  padding-bottom: 1rem;
+  padding-left: 1rem;
+}
+header .header-navigation-mobile.active {
+  top: 0;
+  transition: top 0.5s;
+}
 header .header-navigation-mobile ul {
-  display: flex;
-  justify-content: space-evenly;
   margin-top: 13rem;
 }
 header .header-navigation-mobile ul li {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-size: 1.5rem;
-}
-header .header-navigation-mobile.active {
-  top: 0;
-  transition: top 0.5s;
 }
 header .header {
   padding: 1rem 0;
@@ -502,14 +504,14 @@ header .hamburger-menu-button-svg .bar:nth-of-type(3) {
   -webkit-transform-origin: 20px 20px;
   transform-origin: 20px 20px;
 }
-header .hamburger-menu-button-svg.active .bar:nth-of-type(1) {
+header .hamburger-menu-button.active .hamburger-menu-button-svg .bar:nth-of-type(1) {
   -webkit-transform: rotate(-45deg) translateY(0) translateX(0);
   transform: rotate(-45deg) translateY(0) translateX(0);
 }
-header .hamburger-menu-button-svg.active .bar:nth-of-type(2) {
+header .hamburger-menu-button.active .hamburger-menu-button-svg .bar:nth-of-type(2) {
   opacity: 0;
 }
-header .hamburger-menu-button-svg.active .bar:nth-of-type(3) {
+header .hamburger-menu-button.active .hamburger-menu-button-svg .bar:nth-of-type(3) {
   -webkit-transform: rotate(45deg) translateY(0em) translateX(0em);
   transform: rotate(45deg) translateY(0em) translateX(0em);
 }
@@ -518,14 +520,11 @@ header .hamburger-menu-button-svg.active .bar:nth-of-type(3) {
   background-color: hsl(207deg, 100%, 27%);
 }
 
-.footer-title {
-  text-align: center;
-}
-
 .footer-title h2 {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-size: 2rem;
   color: hsl(0deg, 0%, 100%);
+  padding: 0.2rem;
   text-align: center;
 }
 
@@ -533,11 +532,10 @@ header .hamburger-menu-button-svg.active .bar:nth-of-type(3) {
   display: flex;
   justify-content: space-evenly;
   color: hsl(0deg, 0%, 100%);
-  background-color: hsl(207deg, 100%, 27%);
   margin: auto;
   text-align: flex;
   width: 100%;
-  font-size: 0.6rem;
+  font-size: 0.5rem;
 }
 
 .footer-names ul li:not(:last-child)::after {
@@ -571,16 +569,9 @@ header .hamburger-menu-button-svg.active .bar:nth-of-type(3) {
 .mobile-three-columns {
   display: flex;
   justify-content: space-between;
-  width: 100%;
 }
 .mobile-three-columns > .column {
   width: 30%;
-}
-.mobile-three-columns > .column .featured-element .featured-element-title {
-  background-color: hsl(207deg, 100%, 27%);
-}
-.mobile-three-columns > .column .featured-element .featured-element-title h2 {
-  color: black;
 }
 
 .mobile-two-columns {
@@ -592,28 +583,86 @@ header .hamburger-menu-button-svg.active .bar:nth-of-type(3) {
   width: 48%;
 }
 
-.mobile-one-column {
-  width: 100%;
-  display: block;
-}
 .mobile-one-column > .column {
   width: 100%;
 }
-.mobile-one-column > .column .slider .slider-button button {
+
+.featured-element {
+  display: block;
+  margin-bottom: 2rem;
+}
+.featured-element .featured-element-title {
+  background-color: hsl(207deg, 100%, 27%);
+  border-radius: 0.6rem;
+}
+.featured-element .featured-element-title h2 {
+  color: white;
+  font-size: 1.4rem;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+.featured-element-description {
+  background-color: hsl(207deg, 100%, 27%);
+  border-radius: 0.6rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+.featured-element-description p {
+  color: white;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 1.3rem;
+  padding: 1rem;
+  text-align: justify;
+}
+
+.featured-element-image img {
+  border-bottom: solid 4px hsl(207deg, 100%, 27%);
+}
+
+.slider .slider-button button {
   border-radius: 0.6rem;
   background-color: hsl(207deg, 100%, 27%);
   color: white;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   padding: 0.5rem 2rem;
   margin-left: 10rem;
+  position: absolute;
+  top: 30%;
+  right: 33%;
 }
-.mobile-one-column > .column .slider .slider-title h2 {
-  color: hsl(207deg, 100%, 27%);
+.slider .slider-title h2 {
+  color: white;
   text-align: center;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  z-index: 2;
+  position: absolute;
+  top: 20%;
+  left: 5%;
+  z-index: 1;
 }
-.mobile-one-column > .column .slider .slider-image {
+.slider .slider-image {
   border: solid 2px white;
+}
+
+.ubication-description {
+  background-color: hsl(207deg, 100%, 27%);
+  border-radius: 0.6rem;
+  margin: 10px;
+}
+.ubication-description h3 {
+  padding: 1rem;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.ubication-description p {
+  padding: 0.5rem;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 12px;
+}
+
+.ubication-map iframe {
+  width: 23.4rem;
+  height: 20rem;
 }
 
 /*# sourceMappingURL=main-mobile.css.map */

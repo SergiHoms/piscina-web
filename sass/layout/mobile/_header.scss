@@ -4,16 +4,14 @@ header{
     z-index: 2;
 
     .header-navigation-mobile{
-        ul{display: flex;
-            justify-content: space-evenly;
-            margin-top: 13rem;
+        ul{
             li{
-                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-                font-size: 1.5rem;
+                padding-bottom: 1rem;
+                padding-left: 1rem;
             }
-
         }
-        background-color: hsl(195, 100%, 38%);
+
+        background-color: hsl(207, 100%, 27%);
         height: 55vh;
         left: 0;
         position: fixed;
@@ -27,6 +25,17 @@ header{
             top: 0;
             transition: top 0.5s;
         }
+
+        ul{
+            
+            margin-top: 13rem;
+            li{
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                font-size: 1.5rem;
+            }
+
+        }
+       
     }
     
     .header{
@@ -62,8 +71,8 @@ header{
         
         pointer-events:all; //needs to be there so the hover works
         cursor:pointer;
-
         .bar {
+           
             -webkit-transform:rotate(0) translateY(0) translateX(0);
             transform:rotate(0) translateY(0) translateX(0);
             opacity:1;
@@ -84,21 +93,24 @@ header{
         }
     }
     
-    .hamburger-menu-button-svg.active {
+    .hamburger-menu-button.active{
+
+        .hamburger-menu-button-svg {
        
-        .bar:nth-of-type(1) {
-            -webkit-transform:rotate(-45deg) translateY(0) translateX(0);
-            transform:rotate(-45deg) translateY(0) translateX(0);
+            .bar:nth-of-type(1) {
+                -webkit-transform:rotate(-45deg) translateY(0) translateX(0);
+                transform:rotate(-45deg) translateY(0) translateX(0);
+            }
+        
+            .bar:nth-of-type(2) {
+                opacity:0;
+            }
+        
+            .bar:nth-of-type(3) { 
+                -webkit-transform:rotate(45deg) translateY(0em) translateX(0em);
+                transform:rotate(45deg) translateY(0em) translateX(0em);
+            }  
         }
-    
-        .bar:nth-of-type(2) {
-            opacity:0;
-        }
-    
-        .bar:nth-of-type(3) { 
-            -webkit-transform:rotate(45deg) translateY(0em) translateX(0em);
-            transform:rotate(45deg) translateY(0em) translateX(0em);
-        }  
     }
 }
 

@@ -14,7 +14,7 @@
 <body>
     <header>
         <div class="header">
-            <div class="header-navigation-mobile" id="menu">
+            <div class="header-navigation-mobile mobile-only" id="menu">
                 <ul>
                     <li>INICIO</li>
                     <li>PRODUCTOS</li>
@@ -28,9 +28,9 @@
                     </div>
                 </div>
                 <div class="column mobile-only">
-                    <div class="hamburger-menu-button" >
+                    <div class="hamburger-menu-button mobile-only" id="hamburger">
                         <svg  viewBox="0 0 32 22.5">
-                            <g class="hamburger-menu-button-svg" id="hamburger">
+                            <g class="hamburger-menu-button-svg" >
                                 <path class="bar" d="M20.945,8.75c0,0.69-0.5,1.25-1.117,1.25H3.141c-0.617,0-1.118-0.56-1.118-1.25l0,0
                                     c0-0.69,0.5-1.25,1.118-1.25h16.688C20.445,7.5,20.945,8.06,20.945,8.75L20.945,8.75z">
                                 </path>
@@ -75,7 +75,7 @@
         </div>
          
         <div class="featured">
-            <div class="mobile-three-columns">
+            <div class="desktop-three-columns mobile-one-column">
                 <div class="column">
                     <div class="featured-element">
                         <div class="featured-element-title">
@@ -118,7 +118,7 @@
             </div>     
         </div>
         <div class="ubication">
-            <div class="desktop-two-columns">
+            <div class="desktop-two-columns mobile-one-column">
                 <div class="column">
                     <div class="ubication-description">
                         <h3>Paseo Sagrera</h3>
@@ -129,41 +129,37 @@
                     <div class="ubication-map">
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12302.059400496422!2d2.6288619986168333!3d39.570545543115685!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x129792445dcdf995%3A0xa5e32b601e44d329!2sMonument%20a%20Ramon%20Llull!5e0!3m2!1ses!2ses!4v1650375757133!5m2!1ses!2ses" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
-                </div>
-               
+                </div> 
             </div>
         </div>
 
     </main>
-    <script type="module" src="js/mobile/app.js"></script>
-
     <footer>
         <div class="footer">
-            <div class="desktop-two-columns">
+            <div class="desktop-one-columns">
                 <div class="column">
                     <div class="footer-title">
                         <h2>PISCINAS LLOSETA</h2>
                     </div>
-                </div>
-
-                <div class="column">
-                    <div class="footer-names">
-                        <ul class="footer-list">
-                            <li>Quienes somos</li>
-                            <li>Publicidad</li>
-                            <li>Contacto</li>
-                            <li>Aviso Legal</li>
-                            <li>Política de cookies</li>
-                            <li>Consentimiento</li>
-                            <li>Status</li>
-                        </ul>
-                    </div>     
+                    <div class="column">
+                        <div class="footer-names">
+                            <ul class="footer-list">
+                                <li>Quienes somos</li>
+                                <li>Publicidad</li>
+                                <li>Contacto</li>
+                                <li>Aviso Legal</li>
+                                <li>Política de cookies</li>
+                                <li>Consentimiento</li>
+                                <li>Status</li>
+                            </ul>
+                        </div>     
+                    </div>
                 </div>
             </div>
         </div>    
-        </div>
-            
     </footer>
+    <script type="module" src="js/app.js"></script>
+
 </body>
 
 </html>

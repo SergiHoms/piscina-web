@@ -1,17 +1,22 @@
 .product{
     margin: 2rem 0;
     margin-bottom: 6.9rem;
+
     .product-gallery{
         
         .product-main-image{
             width:32rem;
+
             img{
                 border:solid white;
             }
         }   
     } 
+
     .product-info-article{
+
         padding-left: 6rem;
+
         .product-title{
             background-color:hsl(207deg, 100%, 27%);
             border-radius: .6rem;
@@ -22,10 +27,15 @@
                 
             }
         }
+
         .product-form{
+
             margin-bottom: 2rem;
-        
-        
+            display: flex;
+
+            button{
+                border-radius: .6rem;
+            } 
 
             form{
                 label{
@@ -35,21 +45,21 @@
                 input{
                     border-radius: .6rem;
                 }
-                
-                
-    
+                   
             }
-            
         }
+
         .product-button{
+
             button{
                 background-color:hsl(207deg, 100%, 27%) ;
                 color:white;
                 border-radius: .6rem;
             }
-            
-
+        
         }
+    }
+        
     .product-price{
             h3{
                 font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -80,7 +90,7 @@
         
     }   
 
-}
+
 
 
 

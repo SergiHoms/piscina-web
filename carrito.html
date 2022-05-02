@@ -59,16 +59,13 @@
                             1060 eu/und
                         </span>
                     </div>
-                    <div class="item-quantity">
-                        <div class="quantity-rest">
-                            <button> - </button>
-                        </div>
-                        <div class="quantity-number">
-                            <input type="number"name="quantity" min="1" max="5"> 
-                        </div>
-                        <div class="quantity-plus">
-                            <button> + </button>
-                        </div>
+                    <div class="product-form">
+                        <label for="text">Cantidad:</label>
+                        <button id="minus"> - </button>
+                        <form>
+                            <input id="numbers" type="number"name="quantity" value="1" >
+                        </form>
+                        <button class="plus"> + </button>
                     </div>
                 </div>
                 <div class="items-menu">
@@ -85,16 +82,13 @@
                             1060 eu/und
                         </span>
                     </div>
-                    <div class="item-quantity">
-                        <div class="quantity-rest">
-                            <button> - </button>
-                        </div>
-                        <div class="quantity-number">
-                            <input type="number"name="quantity" min="1" max="5"> 
-                        </div>
-                        <div class="quantity-plus">
-                            <button> + </button>
-                        </div>
+                    <div class="product-form">
+                        <label for="text">Cantidad:</label>
+                        <button class="operation" id="minum"> - </button>
+                        <form>
+                            <input id="numbers" type="number"name="quantity" value="1" >
+                        </form>
+                        <button class="operation" id="plus"> + </button>
                     </div>
                 </div>
                 <div class="desktop-one-column">
@@ -134,7 +128,6 @@
                             </div>
                         </div>
                     </div> 
-                    </form>
                 </div>
                 <div class="cart-buttons">
                     <button>
@@ -148,29 +141,34 @@
         </main>   
         <footer>
             <div class="footer">
-                <div class="desktop-two-columns">
+                <div class="desktop-one-columns">
                     <div class="column">
                         <div class="footer-title">
                             <h2>PISCINAS LLOSETA</h2>
                         </div>
+                        <div class="column">
+                            <div class="footer-names">
+                                <ul class="footer-list">
+                                    <li>Quienes somos</li>
+                                    <li>Publicidad</li>
+                                    <li>Contacto</li>
+                                    <li>Aviso Legal</li>
+                                    <li>Política de cookies</li>
+                                    <li>Consentimiento</li>
+                                    <li>Status</li>
+                                </ul>
+                            </div>     
+                        </div>
                     </div>
     
-                    <div class="column">
-                        <div class="footer-names">
-                            <ul class="footer-list">
-                                <li>Quienes somos</li>
-                                <li>Publicidad</li>
-                                <li>Contacto</li>
-                                <li>Aviso Legal</li>
-                                <li>Política de cookies</li>
-                                <li>Consentimiento</li>
-                                <li>Status</li>
-                            </ul>
-                        </div>     
-                    </div>
+                    
+                    
                 </div>
             </div>    
         </footer>
+
+        <script type="module" src="js/plus-minus-button.js"></script>
+
     </body>
 </html>
  

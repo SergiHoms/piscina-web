@@ -21,21 +21,10 @@
 .mobile-three-columns{
     display: flex;
     justify-content: space-between;
-    width: 100%;
 
     & > .column{
-        .featured-element{
-            .featured-element-title{
-                background-color:hsl(207deg, 100%, 27%);
-                h2{
-                    color:black;
-                    
-                }
-            }
-        }
-        width: 30%;
+        width:30%;
     }
-    
 }
 
 .mobile-two-columns{
@@ -49,37 +38,10 @@
 }
 
 .mobile-one-column{
-    width: 100%;
-    display: block;
+    
 
     & > .column{
-        .slider{
-            .slider-button{
-                button{
-                    border-radius: .6rem;
-                background-color:hsl(207deg, 100%, 27%);
-                color:white;
-                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-                padding: 0.5rem 2rem;
-                margin-left: 10rem;
-                }
-                
 
-            }
-            .slider-title{
-                h2{
-                    color:hsl(207deg, 100%, 27%);
-                    text-align: center;
-                    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-                }
-
-            }
-            .slider-image{
-                border:solid 2px white;
-
-            }
-
-        }
         width: 100%;
     }
 }
