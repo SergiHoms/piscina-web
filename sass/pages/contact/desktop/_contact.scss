@@ -51,7 +51,7 @@
             }
 
             .form-element-input{
-
+                
                 input{
                     padding: 0.2rem 5%;
                     width: 90%;
@@ -61,6 +61,7 @@
                     height: 20vh;
                     padding: 0.2rem 2%;
                     width: 96%;
+                    min-height: auto;
                 }
             }
         }
@@ -77,5 +78,8 @@
                 padding: 0.5rem 2rem;
             }
         }
+    }
+    .ck.ck-editor__editable_inline{
+        color:black;
     }
 }

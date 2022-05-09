@@ -65,12 +65,16 @@
             }
             input{
                 border-radius: .6rem;
+                width: 10rem;
                 
             }
             label{
                 color:white;
                 font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
                 font-weight: 600;
+            }
+            .plus-minus-button{
+                display: flex;
             }    
         }
     }

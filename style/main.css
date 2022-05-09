@@ -877,6 +877,7 @@ header {
   background-color: hsl(207deg, 100%, 27%);
   color: white;
   border-radius: 0.6rem;
+  cursor: pointer;
 }
 .product .product-price h3 {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
@@ -894,6 +895,20 @@ header {
 .product .product-article p {
   padding: 1rem;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.product .notification {
+  background-color: white;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 2rem;
+  opacity: 0;
+  position: fixed;
+  bottom: 15vh;
+  right: 5%;
+  transition: opacity 1s;
+}
+.product .notification.active {
+  opacity: 1;
 }
 
 .cart .title-cart {
@@ -943,11 +958,15 @@ header {
 }
 .cart .items-menu .product-form input {
   border-radius: 0.6rem;
+  width: 10rem;
 }
 .cart .items-menu .product-form label {
   color: white;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-weight: 600;
+}
+.cart .items-menu .product-form .plus-minus-button {
+  display: flex;
 }
 .cart .desktop-one-column {
   width: 13rem;

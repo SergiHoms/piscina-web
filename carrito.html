@@ -60,12 +60,13 @@
                         </span>
                     </div>
                     <div class="product-form">
-                        <label for="text">Cantidad:</label>
-                        <button id="minus"> - </button>
-                        <form>
-                            <input id="numbers" type="number"name="quantity" value="1" >
-                        </form>
-                        <button class="plus"> + </button>
+                        <div class="plus-minus-button">
+                            <button class="minus"> - </button>
+                            <form>
+                                <input id="numbers" class="plus-minus-input" type="number"name="quantity" value="1" >
+                            </form>
+                            <button class="plus"> + </button>
+                        </div>
                     </div>
                 </div>
                 <div class="items-menu">
@@ -83,12 +84,13 @@
                         </span>
                     </div>
                     <div class="product-form">
-                        <label for="text">Cantidad:</label>
-                        <button class="operation" id="minum"> - </button>
-                        <form>
-                            <input id="numbers" type="number"name="quantity" value="1" >
-                        </form>
-                        <button class="operation" id="plus"> + </button>
+                        <div class="plus-minus-button">
+                            <button class="minus"> - </button>
+                            <form>
+                                <input id="numbers" class="plus-minus-input" type="number"name="quantity" value="1" >
+                            </form>
+                            <button class="plus"> + </button>
+                        </div> 
                     </div>
                 </div>
                 <div class="desktop-one-column">
@@ -96,7 +98,6 @@
                         <div class="top-box">
                             <h3>Resumen de la compra</h3>
                         </div>
-                
                         <div class="desktop-two-columns-box">
                             <div class="column">
                                 <div class="element-checkout-list-left">
@@ -160,14 +161,11 @@
                             </div>     
                         </div>
                     </div>
-    
-                    
-                    
                 </div>
             </div>    
         </footer>
 
-        <script type="module" src="js/plus-minus-button.js"></script>
+        <script type="module" src="js/app.js"></script>
 
     </body>
 </html>

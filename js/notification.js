@@ -1,17 +1,17 @@
-export let renderNotification = () => {
+export let renderNotification = (message, type) => {
 
-    let button = document.querySelector(".product-button");
+    let notification = document.querySelector(".notification");
+    let popup = document.querySelector('.notification-message')
 
-    button.addEventListener("click", () => {
-        function ShowDiv() {
-            document.getElementById("").style.display = "";
-        }
-        
-        
-    });  
+    notification.classList.add("active")
+
+    setTimeout(() => {
+        notification.classList.remove("active")
+    }, 5000);
     
+    popup.innerHTML = message;
 
-
+    
 
 
 }

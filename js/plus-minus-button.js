@@ -1,28 +1,30 @@
 export let renderPlusMinusButton = () => {
     
-    let number = document.getElementById("numbers");
-    let minus = document.getElementsById("minus");
-    let plus = document.getElementsById("plus");
-    let operations = document.getElementsByClassName(".operation");
+    let minuses = document.querySelectorAll(".minus");
+    let pluses = document.querySelectorAll(".plus");
 
-    operations.forEach(operation => {
-    
-        operation.addEventListener("click", () => {
-            number.classList.add("active"); 
+    pluses.forEach(plus => { 
+
+        plus.addEventListener("click", () => {
+
+            let number = plus.parentNode.querySelector('.plus-minus-input');
+
+            number.value = (parseInt(number.value) + 1);
+
         });
     });
-    
-    plus.addEventListener("click", () => {
-        number.value = (parseInt(number.value) + 1);
-    
+
+    minuses.forEach(minus => { 
+
+        minus.addEventListener("click", () => {
+            let number = minus.parentNode.querySelector('.plus-minus-input');
+
+             if(number.value > 1) {
+                 number.value = (parseInt(number.value) - 1);
+            }
+
+        });
     });
-    
-    minus.addEventListener("click", () => {
-        if(number.value > 1) {
-            number.value = (parseInt(number.value) - 1);
-        }
-    });
-    
 }
 
 
