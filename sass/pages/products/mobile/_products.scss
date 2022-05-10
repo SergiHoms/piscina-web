@@ -1,4 +1,39 @@
 .products{
-    padding: 3rem;
-    
+    .products-category-title{
+        h2{
+            text-align: center;
+        }
+    }
+    .products-category-menu{
+        background-color: hsl(207deg, 100%, 27%);
+        border-radius: .6rem;
+
+        ul{
+            text-align: center;
+            li{
+                color:white;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            }
+        }
+    }
+    .products-counter{
+        h4{
+            text-align: center;
+        }
+    }
+    .products-searcher{
+        input{
+            width: 23.3rem;
+        }
+    }
+    .product-title{
+        text-align: center;
+    }
+    .product-offer{
+        text-align: center;
+        margin:1rem;
+        button{
+            background-color:hsl(207deg, 100%, 27%) ;
+        }
+    }
 }
