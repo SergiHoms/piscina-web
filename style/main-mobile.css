@@ -669,6 +669,66 @@ header .hamburger-menu-button.active .hamburger-menu-button-svg .bar:nth-of-type
   height: 20rem;
 }
 
+.content-title {
+  background-color: hsl(207deg, 100%, 27%);
+  border-radius: 0.6rem;
+}
+.content-title h2 {
+  margin: 1rem;
+  text-align: center;
+  padding: 1rem;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.content-list {
+  padding: 1rem;
+}
+.content-list .lists-contents {
+  max-width: auto;
+}
+.content-list .list {
+  background-color: hsl(207deg, 100%, 27%);
+  padding: 0.5rem;
+  border-radius: 0.2rem;
+  border: solid 1px white;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.content-list .list :hover {
+  filter: brightness(80%);
+  transition: filter 0.25;
+}
+.content-list .list svg {
+  color: white;
+  width: 2em;
+}
+.content-list .list h3 {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.content-list .content {
+  background-color: white;
+  display: none;
+  border-bottom-left-radius: 0.6rem;
+  border-bottom-right-radius: 0.6rem;
+}
+.content-list .content span {
+  display: block;
+  color: hsl(207deg, 100%, 27%);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  padding: 1rem;
+}
+.content-list .content.active {
+  background-color: white;
+  display: block;
+}
+.content-list .content.active span {
+  display: block;
+  color: hsl(207deg, 100%, 27%);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  padding: 1rem;
+}
+
 .products .products-category-title h2 {
   text-align: center;
 }

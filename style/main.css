@@ -466,14 +466,14 @@ header {
 
 .header .header-navigation ul {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   padding-top: 3%;
   color: hsl(207deg, 100%, 27%);
 }
 
 .header .header-navigation ul li:not(:last-child)::after {
   content: "|";
-  padding-left: 1rem;
+  padding: 1rem;
   color: hsl(0deg, 0%, 67%);
   font-weight: 600;
 }
@@ -563,6 +563,78 @@ header {
   display: flex;
   flex-direction: column;
   width: 100%;
+}
+
+.content-title {
+  background-color: hsl(207deg, 100%, 27%);
+  border-radius: 0.6rem;
+}
+.content-title h2 {
+  margin: 1rem;
+  text-align: center;
+  padding: 1rem;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.content-list {
+  padding: 1rem;
+}
+.content-list .list {
+  background-color: hsl(207deg, 100%, 27%);
+  width: 49%;
+  padding: 0.5rem;
+  border-radius: 0.2rem;
+  border: solid 1px white;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.content-list .list :hover {
+  color: lightblue;
+  filter: brightness(80%);
+  transition: filter 0.75;
+}
+.content-list .list svg {
+  color: white;
+  width: 2rem;
+}
+.content-list .list h3 {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.content-list .content {
+  background-color: white;
+  width: 50%;
+  border: solid 2px hsl(207deg, 100%, 27%);
+  display: none;
+  border-bottom-left-radius: 0.6rem;
+  border-bottom-right-radius: 0.6rem;
+}
+.content-list .content span {
+  display: block;
+  color: hsl(207deg, 100%, 27%);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  padding: 1rem;
+}
+.content-list .content svg {
+  color: white;
+  transform: rotate(90deg);
+}
+.content-list .content.active {
+  background-color: white;
+  width: 50%;
+  border: solid 2px hsl(207deg, 100%, 27%);
+  transition: 0.75;
+  display: block;
+}
+.content-list .content.active svg {
+  color: white;
+  transform: rotate(90deg);
+}
+.content-list .content.active span {
+  display: block;
+  color: hsl(207deg, 100%, 27%);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  padding: 1rem;
 }
 
 .featured {
@@ -758,6 +830,7 @@ header {
   height: 20vh;
   padding: 0.2rem 2%;
   width: 96%;
+  min-height: auto;
 }
 .contact .contact-form .form-send-button {
   margin-left: auto;
@@ -768,6 +841,9 @@ header {
   color: white;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   padding: 0.5rem 2rem;
+}
+.contact .ck.ck-editor__editable_inline {
+  color: black;
 }
 
 .products {
@@ -999,6 +1075,7 @@ header {
   border-radius: 0.6rem;
 }
 .cart .desktop-one-column .desktop-two-columns-box {
+  width: 20rem;
   border-radius: 0.6rem;
   display: flex;
   justify-content: space-evenly;

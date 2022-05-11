@@ -16,7 +16,7 @@
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _tabs_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./tabs.js */ \"./js/tabs.js\");\n/* harmony import */ var _menu_button_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./menu-button.js */ \"./js/menu-button.js\");\n/* harmony import */ var _plus_minus_button_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./plus-minus-button.js */ \"./js/plus-minus-button.js\");\n/* harmony import */ var _product_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./product.js */ \"./js/product.js\");\n/* harmony import */ var _ckeditor_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./ckeditor.js */ \"./js/ckeditor.js\");\n\r\n\r\n\r\n\r\n\r\n\r\n(0,_menu_button_js__WEBPACK_IMPORTED_MODULE_1__.renderMenuButton)();\r\n(0,_tabs_js__WEBPACK_IMPORTED_MODULE_0__.renderTabs)();\r\n(0,_plus_minus_button_js__WEBPACK_IMPORTED_MODULE_2__.renderPlusMinusButton)();\r\n(0,_product_js__WEBPACK_IMPORTED_MODULE_3__.renderProduct)();\r\n(0,_ckeditor_js__WEBPACK_IMPORTED_MODULE_4__.renderCkeditor)();\n\n//# sourceURL=webpack:///./js/app.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _tabs_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./tabs.js */ \"./js/tabs.js\");\n/* harmony import */ var _menu_button_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./menu-button.js */ \"./js/menu-button.js\");\n/* harmony import */ var _plus_minus_button_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./plus-minus-button.js */ \"./js/plus-minus-button.js\");\n/* harmony import */ var _product_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./product.js */ \"./js/product.js\");\n/* harmony import */ var _ckeditor_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./ckeditor.js */ \"./js/ckeditor.js\");\n/* harmony import */ var _faqs_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./faqs.js */ \"./js/faqs.js\");\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n(0,_menu_button_js__WEBPACK_IMPORTED_MODULE_1__.renderMenuButton)();\r\n(0,_tabs_js__WEBPACK_IMPORTED_MODULE_0__.renderTabs)();\r\n(0,_plus_minus_button_js__WEBPACK_IMPORTED_MODULE_2__.renderPlusMinusButton)();\r\n(0,_product_js__WEBPACK_IMPORTED_MODULE_3__.renderProduct)();\r\n(0,_ckeditor_js__WEBPACK_IMPORTED_MODULE_4__.renderCkeditor)();\r\n(0,_faqs_js__WEBPACK_IMPORTED_MODULE_5__.renderFaqs)();\n\n//# sourceURL=webpack:///./js/app.js?");
 
 /***/ }),
 
@@ -28,6 +28,17 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _tab
 
 "use strict";
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"renderCkeditor\": () => (/* binding */ renderCkeditor)\n/* harmony export */ });\n/* harmony import */ var _ckeditor_ckeditor5_build_classic__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @ckeditor/ckeditor5-build-classic */ \"./node_modules/@ckeditor/ckeditor5-build-classic/build/ckeditor.js\");\n/* harmony import */ var _ckeditor_ckeditor5_build_classic__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_ckeditor_ckeditor5_build_classic__WEBPACK_IMPORTED_MODULE_0__);\n\r\n\r\nlet renderCkeditor = () => {\r\n\r\n  let textareas = document.querySelectorAll('.ckeditor');\r\n\r\n  textareas.forEach(textarea => {\r\n    \r\n    _ckeditor_ckeditor5_build_classic__WEBPACK_IMPORTED_MODULE_0___default().create(textarea)\r\n    .then( editor => {\r\n\t\twindow.editor = editor;\r\n    })\r\n    .catch( error => {\r\n\t\tconsole.error( 'There was a problem initializing the editor.', error );\r\n    } );\r\n    \r\n\r\n    \r\n    \r\n  });\r\n\r\n    \r\n}\r\n\r\n\r\n\r\n\r\n\r\n\n\n//# sourceURL=webpack:///./js/ckeditor.js?");
+
+/***/ }),
+
+/***/ "./js/faqs.js":
+/*!********************!*\
+  !*** ./js/faqs.js ***!
+  \********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"renderFaqs\": () => (/* binding */ renderFaqs)\n/* harmony export */ });\nlet renderFaqs = () => {\r\n\r\n    let lists = document.querySelectorAll(\".list\")\r\n    let contents = document.querySelectorAll(\".content\")\r\n\r\n    lists.forEach(list => { \r\n\r\n        list.addEventListener(\"click\", () => {\r\n\r\n            lists.forEach(tab => {\r\n                list.classList.remove(\"active\");\r\n            });\r\n\r\n            list.classList.add(\"active\");\r\n\r\n            contents.forEach( content => {\r\n                \r\n                if(content.dataset.content == list.dataset.list){\r\n                    content.classList.add(\"active\");\r\n                }else{\r\n                    content.classList.remove(\"active\");\r\n                }\r\n            });\r\n                \r\n        });\r\n    });\r\n} \n\n//# sourceURL=webpack:///./js/faqs.js?");
 
 /***/ }),
 
