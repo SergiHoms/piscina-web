@@ -983,4 +983,9 @@ header .hamburger-menu-button.active .hamburger-menu-button-svg .bar:nth-of-type
   padding: 0.5rem 2rem;
 }
 
+.information {
+  background-color: white;
+  display: flex;
+}
+
 /*# sourceMappingURL=main-mobile.css.map */

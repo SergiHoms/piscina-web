@@ -1166,4 +1166,36 @@ header {
   padding: 0.5rem 2rem;
 }
 
+.information {
+  background-color: white;
+  border-radius: 0.6rem;
+  display: flex;
+}
+.information ul {
+  padding: 1rem;
+}
+.information ul li {
+  color: hsl(207deg, 100%, 27%);
+  font-size: 1.2rem;
+}
+.information .svgs {
+  margin-top: 2rem;
+  color: hsl(207deg, 100%, 27%);
+  cursor: pointer;
+}
+
+.down-list .list-down {
+  display: flex;
+  justify-content: space-evenly;
+  color: white;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.list-navigation .navigation-list {
+  display: flex;
+  justify-content: space-evenly;
+  color: white;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
 /*# sourceMappingURL=main.css.map */

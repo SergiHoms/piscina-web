@@ -1,0 +1,42 @@
+.information{
+    ul{
+        li{
+            color:hsl(207, 100%, 27%);
+            font-size: 1.2rem;
+        }
+        padding: 1rem;
+    }
+    background-color: white;
+    border-radius: .6rem;
+    display: flex;
+
+    .svgs{
+        margin-top: 2rem;
+        color:hsl(207, 100%, 27%);
+        cursor: pointer;
+    }
+
+}
+
+.down-list{
+
+    .list-down{
+        display: flex;
+        justify-content: space-evenly;
+        color:white;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+    }
+}
+
+.list-navigation{
+
+    .navigation-list{
+        display: flex;
+        justify-content: space-evenly;
+        color:white;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+    }
+    
+}
