@@ -1184,6 +1184,9 @@ header {
   cursor: pointer;
 }
 
+.down-list {
+  height: 5rem;
+}
 .down-list .list-down {
   display: flex;
   justify-content: space-evenly;
@@ -1196,6 +1199,72 @@ header {
   justify-content: space-evenly;
   color: white;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.column-right {
+  border: solid 4px white;
+  border-radius: 0.6rem;
+}
+
+.box-content-first-buttons {
+  background-color: grey;
+  display: flex;
+}
+.box-content-first-buttons ul {
+  display: flex;
+  background-color: hsl(207deg, 100%, 27%);
+  border-radius: 0.6rem;
+}
+.box-content-first-buttons ul li {
+  color: hsl(207deg, 100%, 27%);
+  margin: 1rem;
+  cursor: pointer;
+  color: white;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.box-content-first-buttons .svg-box svg {
+  width: 3rem;
+  margin-top: 1rem;
+  cursor: pointer;
+}
+.box-content-first-buttons .svg-box svg path {
+  color: hsl(207deg, 100%, 27%);
+}
+.box-content-first-buttons .button-box button {
+  margin-top: 2rem;
+  background-color: hsl(207deg, 100%, 27%);
+  border-radius: 0.6rem;
+  border: solid 1px white;
+  cursor: pointer;
+}
+.box-content-first-buttons .button-box button span {
+  color: white;
+}
+
+.box-content-second {
+  background-color: green;
+  justify-content: space-between;
+}
+.box-content-second label {
+  color: white;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.box-content-second input {
+  display: flex;
+}
+
+.box-button {
+  background-color: grey;
+}
+.box-button button {
+  background-color: hsl(207deg, 100%, 27%);
+  border: none;
+  color: white;
+  padding: 1;
+}
+
+.box-content-last {
+  background-color: violet;
 }
 
 /*# sourceMappingURL=main.css.map */

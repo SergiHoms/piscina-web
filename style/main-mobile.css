@@ -664,9 +664,13 @@ header .hamburger-menu-button.active .hamburger-menu-button-svg .bar:nth-of-type
   font-size: 12px;
 }
 
+.ubication-map {
+  text-align: center;
+}
 .ubication-map iframe {
-  width: 23.4rem;
+  width: 23.2rem;
   height: 20rem;
+  border-radius: 0.6rem;
 }
 
 .content-title {
@@ -729,25 +733,90 @@ header .hamburger-menu-button.active .hamburger-menu-button-svg .bar:nth-of-type
   padding: 1rem;
 }
 
+.tabs-container .tabs {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: hsl(207deg, 100%, 27%);
+  padding: 1rem;
+  border-top-left-radius: 0.6rem;
+  border-top-right-radius: 0.6rem;
+  border: solid 2px white;
+}
+.tabs-container .tabs select {
+  background-color: hsl(207deg, 100%, 27%);
+  border: none;
+  color: white;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+.tabs-container .tabs select option {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  transition: transform 0.4s ease-in-out, opacity 0.2s ease-in-out;
+}
+.tabs-container .tabs select option .hover {
+  filter: brightness(80%);
+  transition: filter 0.25;
+}
+.tabs-container .tabs select select.active {
+  background-color: white;
+  color: hsl(207deg, 100%, 27%);
+  border-radius: 0.6rem;
+}
+.tabs-container .tab-display {
+  background-color: white;
+  border-bottom-right-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+  display: none;
+  margin-bottom: 1rem;
+  padding: 1rem;
+}
+.tabs-container .tab-display.active {
+  display: block;
+}
+.tabs-container .tab-display p {
+  color: hsl(207deg, 100%, 27%);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 1.3rem;
+}
+
+.products {
+  margin: 0.5rem;
+}
+.products .products-category-title {
+  background-color: white;
+}
 .products .products-category-title h2 {
+  color: hsl(207deg, 100%, 27%);
   text-align: center;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.products .products-category {
+  border: solid 2px white;
 }
 .products .products-category-menu {
   background-color: hsl(207deg, 100%, 27%);
-  border-radius: 0.6rem;
-}
-.products .products-category-menu ul {
   text-align: center;
 }
-.products .products-category-menu ul li {
+.products .products-category-menu select {
+  padding: 0.5rem;
   color: white;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 1.4rem;
+  border: none;
+  background-color: hsl(207deg, 100%, 27%);
+}
+.products .products-category-menu select option {
+  text-align: center;
 }
 .products .products-counter h4 {
   text-align: center;
+  margin-top: 1rem;
 }
 .products .products-searcher input {
-  width: 23.3rem;
+  width: 22.5rem;
+  border-radius: 0.6rem;
+  margin-bottom: 0.5rem;
 }
 .products .product-title {
   text-align: center;
@@ -758,6 +827,15 @@ header .hamburger-menu-button.active .hamburger-menu-button-svg .bar:nth-of-type
 }
 .products .product-offer button {
   background-color: hsl(207deg, 100%, 27%);
+  border-radius: 0.6rem;
+}
+.products .product-offer button p {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: 600;
+}
+
+.product {
+  margin: 0.5rem;
 }
 
 .product-title {
@@ -769,12 +847,32 @@ header .hamburger-menu-button.active .hamburger-menu-button-svg .bar:nth-of-type
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
+.product-info-price {
+  background-color: white;
+  border: solid 2px hsl(207deg, 100%, 27%);
+  border-top-left-radius: 0.6rem;
+  border-top-right-radius: 0.6rem;
+  margin-top: 0.5rem;
+}
+
 .product-price h3 {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: hsl(207deg, 100%, 27%);
+  text-align: center;
+  padding: 0.5rem;
+}
+
+.product-info-title {
+  background-color: hsl(207deg, 100%, 27%);
+  border-bottom-left-radius: 0.6rem;
+  border-bottom-right-radius: 0.6rem;
+  margin-bottom: 0.5rem;
 }
 
 .product-article-title h3 {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+  padding: 0.5rem;
 }
 
 .product-article {
@@ -790,6 +888,15 @@ header .hamburger-menu-button.active .hamburger-menu-button-svg .bar:nth-of-type
   display: flex;
   justify-content: space-evenly;
   margin: 1rem;
+}
+.product-form button {
+  background-color: hsl(207deg, 100%, 27%);
+  color: white;
+  border-radius: 0.6rem;
+  cursor: pointer;
+}
+.product-form input {
+  border-radius: 0.6rem;
 }
 
 .product-button {
@@ -812,12 +919,23 @@ header .hamburger-menu-button.active .hamburger-menu-button-svg .bar:nth-of-type
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
+.column-options ul {
+  margin: 2rem;
+}
 .column-options ul li {
   color: white;
   text-align: center;
+  margin-top: 2rem;
+}
+.column-options ul li svg path {
+  color: hsl(207deg, 100%, 27%);
 }
 .column-options ul li span {
   text-align: center;
+}
+
+.form-element {
+  margin: 0.5rem;
 }
 
 .form-element-label {
@@ -854,6 +972,16 @@ header .hamburger-menu-button.active .hamburger-menu-button-svg .bar:nth-of-type
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
+.form-element-label label {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 1.2rem;
+}
+
+.form-element-input input {
+  width: 21.5rem;
+  border-radius: 0.6rem;
+}
+
 .form-element-label-direction {
   text-align: center;
 }
@@ -865,7 +993,7 @@ header .hamburger-menu-button.active .hamburger-menu-button-svg .bar:nth-of-type
   text-align: center;
   background-color: white;
   border-radius: 0.6rem;
-  margin: 1rem;
+  margin-top: 1rem;
 }
 .top-box h3 {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
@@ -981,11 +1109,6 @@ header .hamburger-menu-button.active .hamburger-menu-button-svg .bar:nth-of-type
   color: white;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   padding: 0.5rem 2rem;
-}
-
-.information {
-  background-color: white;
-  display: flex;
 }
 
 /*# sourceMappingURL=main-mobile.css.map */

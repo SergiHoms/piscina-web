@@ -11,12 +11,15 @@
     
     
     ul{
+        margin: 2rem;
         
         
         li{ color:white;
             text-align: center;
+            margin-top: 2rem;
             svg{
                 path{
+                    color:hsl(207, 100%, 27%);
                     
                 }
             }
@@ -26,6 +29,9 @@
 
         }
     }
+}
+.form-element{
+    margin: .5rem;
 }
 .form-element-label{
     text-align: center;
@@ -38,6 +44,7 @@
 }
 .form-element-input{
     text-align: center;
+    
     input{
         text-align: center;
 
