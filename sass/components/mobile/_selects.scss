@@ -1,7 +1,7 @@
-.tabs-container{
+.selects-container{
     
 
-    .tabs{
+    .selects{
         display: flex;
         justify-content: space-evenly;
         background-color:hsl(207deg, 100%, 27%);
@@ -41,7 +41,7 @@
         }
     }
     
-    .tab-display {
+    .selects-related {
         background-color: white;
         border-bottom-right-radius: 1rem;
         border-bottom-left-radius: 1rem;
@@ -50,11 +50,11 @@
         padding: 1rem;
     }
 
-    .tab-display.active {
+    .selects-related.active {
         display: block;
     }
       
-    .tab-display p {
+    .selects-related p {
         color:hsl(207deg, 100%, 27%);
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         font-size: 1.3rem;

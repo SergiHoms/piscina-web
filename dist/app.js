@@ -16,7 +16,7 @@
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _tabs_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./tabs.js */ \"./js/tabs.js\");\n/* harmony import */ var _menu_button_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./menu-button.js */ \"./js/menu-button.js\");\n/* harmony import */ var _plus_minus_button_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./plus-minus-button.js */ \"./js/plus-minus-button.js\");\n/* harmony import */ var _product_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./product.js */ \"./js/product.js\");\n/* harmony import */ var _ckeditor_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./ckeditor.js */ \"./js/ckeditor.js\");\n/* harmony import */ var _faqs_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./faqs.js */ \"./js/faqs.js\");\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n(0,_menu_button_js__WEBPACK_IMPORTED_MODULE_1__.renderMenuButton)();\r\n(0,_tabs_js__WEBPACK_IMPORTED_MODULE_0__.renderTabs)();\r\n(0,_plus_minus_button_js__WEBPACK_IMPORTED_MODULE_2__.renderPlusMinusButton)();\r\n(0,_product_js__WEBPACK_IMPORTED_MODULE_3__.renderProduct)();\r\n(0,_ckeditor_js__WEBPACK_IMPORTED_MODULE_4__.renderCkeditor)();\r\n(0,_faqs_js__WEBPACK_IMPORTED_MODULE_5__.renderFaqs)();\n\n//# sourceURL=webpack:///./js/app.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _tabs_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./tabs.js */ \"./js/tabs.js\");\n/* harmony import */ var _menu_button_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./menu-button.js */ \"./js/menu-button.js\");\n/* harmony import */ var _plus_minus_button_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./plus-minus-button.js */ \"./js/plus-minus-button.js\");\n/* harmony import */ var _product_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./product.js */ \"./js/product.js\");\n/* harmony import */ var _ckeditor_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./ckeditor.js */ \"./js/ckeditor.js\");\n/* harmony import */ var _faqs_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./faqs.js */ \"./js/faqs.js\");\n/* harmony import */ var _selects_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./selects.js */ \"./js/selects.js\");\n/* harmony import */ var _selects_js__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_selects_js__WEBPACK_IMPORTED_MODULE_6__);\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n(0,_menu_button_js__WEBPACK_IMPORTED_MODULE_1__.renderMenuButton)();\r\n(0,_tabs_js__WEBPACK_IMPORTED_MODULE_0__.renderTabs)();\r\n(0,_plus_minus_button_js__WEBPACK_IMPORTED_MODULE_2__.renderPlusMinusButton)();\r\n(0,_product_js__WEBPACK_IMPORTED_MODULE_3__.renderProduct)();\r\n(0,_ckeditor_js__WEBPACK_IMPORTED_MODULE_4__.renderCkeditor)();\r\n(0,_faqs_js__WEBPACK_IMPORTED_MODULE_5__.renderFaqs)();\r\n(0,_selects_js__WEBPACK_IMPORTED_MODULE_6__.renderSelects)();\n\n//# sourceURL=webpack:///./js/app.js?");
 
 /***/ }),
 
@@ -83,6 +83,16 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 "use strict";
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"renderProduct\": () => (/* binding */ renderProduct)\n/* harmony export */ });\n/* harmony import */ var _notification_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./notification.js */ \"./js/notification.js\");\n\r\n\r\nlet renderProduct = () => {\r\n\r\n    let addButton = document.querySelector(\".product-button\");\r\n\r\n    if(addButton){\r\n        addButton.addEventListener(\"click\", () => {\r\n\r\n            (0,_notification_js__WEBPACK_IMPORTED_MODULE_0__.renderNotification)(\"El producto ha sido añadido a la cesta\", \"success\");\r\n    \r\n        });  \r\n    }\r\n\r\n}\n\n//# sourceURL=webpack:///./js/product.js?");
+
+/***/ }),
+
+/***/ "./js/selects.js":
+/*!***********************!*\
+  !*** ./js/selects.js ***!
+  \***********************/
+/***/ (() => {
+
+eval("\n\n//# sourceURL=webpack:///./js/selects.js?");
 
 /***/ }),
 
